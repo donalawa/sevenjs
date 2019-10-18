@@ -8,7 +8,7 @@
  *
  **/
 
-class SevenHTTP {
+export default class SevenHTTP {
     // Make an HTTP GET Request 
     async get(url) {
       const response = await fetch(url);
@@ -17,7 +17,7 @@ class SevenHTTP {
     }
   
     // Make an HTTP POST Request
-    async post(url, data) {
+    export async post(url, data) {
       const response = await fetch(url, {
         method: 'POST',
         headers: {
@@ -32,7 +32,7 @@ class SevenHTTP {
     }
   
      // Make an HTTP PUT Request
-     async put(url, data) {
+     export async put(url, data) {
       const response = await fetch(url, {
         method: 'PUT',
         headers: {
@@ -46,7 +46,7 @@ class SevenHTTP {
     }
   
     // Make an HTTP DELETE Request
-    async delete(url) {
+    export async delete(url) {
       const response = await fetch(url, {
         method: 'DELETE',
         headers: {
